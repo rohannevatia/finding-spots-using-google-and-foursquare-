@@ -1,0 +1,48 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:id="@+id/setting_radius"
+        android:key="radius"
+        android:title="Set Radius"
+        android:defaultValue="5000"
+        android:selectAllOnFocus="true"
+        android:gravity="center"
+        android:inputType="number"
+        android:background="@drawable/radius"/>
+    <PreferenceCategory android:title="App Overview">
+        <Preference
+            android:key="preferences_overview"
+            android:title="App Overview"
+            android:summary="Spot Finder helps you find new and fun places near your location, for you and your loved ones to spend some quality time together. Either it be dinner, coffee or even drinks, Spot Finder will provide you with all the available places near you, with details for each and every one of them.
+It is also a great navigation tool to take on a vacation as you can find your way around an unfamiliar city. ">
+</Preference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Terms And Conditions" >
+    <Preference
+        android:key="preferences_privacy"
+        android:title="Privacy Policies"
+        android:summary="This application uses GPS for displaying user's location. Your location will not be stored, disclosed or used without prior information. This app will not display user's were abouts on public page, unless user wants to.
+The user should know this before they authenticate and agree to use this app.">
+    </Preference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="App Guide">
+        <Preference
+            android:key="preferences_guide"
+            android:title="App Guide"
+            android:summary="The App has two tabs Basic utilities for commonly used utilities like ATM, Bank, Airport etc and the other tab contains Tourist spots like Museum, Aquarium etc. Set the radius limit, choose the tab as per your need locate and reach easily in fingertips! After searching for any spot using the searching options available then zoom in and tap on the marker and you will get options for getting directions with the help of Google map.">
+        </Preference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Basic Utilities">
+        <Preference
+            android:key="preferences_guide_basic"
+            android:title="Basic Utilities"
+            android:summary="This tab shows the current location by default and one can search list of spots by using Locate Nearby or Locate in Radius. Locate Nearby gives the near most maximum of 20 spots and Locate in Radius gives the maximum of 20 prominent spots. One can also do these searching from any other location apart from current location and also change the radius limit for search optimization. Different colored markers are used to denote the current and searched location.">
+        </Preference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Tourist Spots">
+        <Preference
+            android:key="preferences_guide_tourist"
+            android:title="Tourist Spots"
+            android:summary="This tab shows the current location by default and one can search list of spots by using Find option. You can also do these searching from any other location apart from current location and also change the radius limit for search optimization. The red colored marker shows the current location, blue the searched location and orange the result of spots searched. The Me tab reverts back you to current location.">
+        </Preference>
+    </PreferenceCategory>
+</PreferenceScreen>

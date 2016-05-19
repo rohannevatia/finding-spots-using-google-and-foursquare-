@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin_large"
+            android:textSize="@dimen/font_large"
+            android:text="Location"/>
+
+    </FrameLayout>
+
+
+    <EditText
+        android:id="@+id/atv_places"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/standard_height"
+
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/font_small"
+
+        android:drawableLeft="@drawable/ic_action_search"
+        android:singleLine="true"
+        android:paddingTop="@dimen/margin_small"
+        android:paddingLeft="@dimen/margin_small"
+        android:paddingRight="@dimen/margin_small"
+        android:paddingBottom="@dimen/margin_small"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:hint="Start typing a city name"/>
+
+
+
+        <ListView
+            android:id="@+id/list_cities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/list_divider"
+            android:dividerHeight="0.5dp"
+            android:paddingBottom="@dimen/margin_small">
+        </ListView>
+
+</LinearLayout>

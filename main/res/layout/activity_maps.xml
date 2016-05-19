@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <Spinner
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:theme="@android:style/ButtonBar"
+            android:popupTheme="@android:animator/fade_in"
+            android:id="@+id/spr_place_type"
+            android:layout_weight="0.92">
+
+        </Spinner>
+
+
+
+        <Button
+            android:id="@+id/btn_findnearby"
+            android:layout_width="85dp"
+            android:background="@android:color/holo_blue_dark"
+            android:textColor="@android:color/white"
+            android:layout_height="match_parent"
+            android:textSize="12dp"
+            android:text="Locate NearBy"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_weight="0.07" />
+        <Button
+            android:id="@+id/btn_find"
+            android:layout_width="85dp"
+            android:background="@android:color/white"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_height="match_parent"
+            android:textSize="12dp"
+            android:text="Locate In Radius"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+        <EditText
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:ellipsize="end"
+            android:id="@+id/TFaddress"
+            android:layout_below="@+id/spr_place_type"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/btn_search"
+            android:layout_weight="1.01" />
+        <Button
+            android:layout_width="85dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_blue_dark"
+            android:textColor="@android:color/white"
+            android:text="Search"
+            android:textSize="12dp"
+            android:id="@+id/btn_search"
+            android:layout_below="@+id/spr_place_type"
+            android:layout_alignEnd="@+id/btn_find"
+            android:onClick="onSearch" />
+
+
+    </LinearLayout>
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+    <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@android:drawable/ic_menu_compass"
+            android:textColor="@android:color/background_dark"
+           android:text="Me"
+           android:layout_gravity="top|right"
+            android:id="@+id/btn_findme"
+            android:textSize="14dp"
+            android:layout_below="@+id/spr_place_type"
+            android:layout_alignEnd="@+id/btn_find"
+            android:onClick="onSearch"
+            android:layout_toEndOf="@+id/TFaddress" />
+
+
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/map"
+            tools:context=".FsquareActivity"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/btn_search"/>
+
+    </FrameLayout>
+
+
+
+
+
+</LinearLayout>
+
+
+
+

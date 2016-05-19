@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:weightSum="1">
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1">
+
+    <Spinner
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:id="@+id/spr_place_type"
+        android:layout_weight="1"
+        android:theme="@android:style/ButtonBar"/>
+
+    <Button
+        android:id="@+id/btn_find"
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:background="@android:color/white"
+        android:textColor="@android:color/holo_blue_dark"
+        android:text="@string/str_btn_find"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <EditText
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:id="@+id/TFaddress"
+            android:lines="1"
+            android:ellipsize="end"
+            android:layout_below="@+id/spr_place_type"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/btn_search"
+            android:layout_weight="0.99" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"
+        android:text="Search"
+        android:id="@+id/btn_search"
+        android:layout_below="@+id/spr_place_type"
+        android:layout_alignEnd="@+id/btn_find"
+        android:onClick="onSearch" />
+
+
+</LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="60dp"
+            android:background="@android:drawable/ic_menu_compass"
+            android:textColor="@android:color/background_dark"
+            android:text="Me"
+            android:id="@+id/btn_findme"
+            android:layout_below="@+id/spr_place_type"
+            android:layout_alignEnd="@+id/btn_find"
+            android:onClick="onSearch"
+            android:layout_toEndOf="@+id/TFaddress"
+            android:layout_gravity="top|right"/>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        tools:context=".FsquareActivity"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btn_search" />
+
+    </FrameLayout>
+
+</LinearLayout>

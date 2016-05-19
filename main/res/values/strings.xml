@@ -1,0 +1,188 @@
+<resources>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+    <string name="title_activity_maps">Map</string>
+    <string name="str_btn_find">Find</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+
+    <string-array name="place_type">
+        <item>amusement_park</item>
+        <item>museum</item>
+        <item>park</item>
+        <item>zoo</item>
+        <item>airport</item>
+        <item>atm</item>
+        <item>bank</item>
+        <item>bus_station</item>
+        <item>church</item>
+        <item>doctor</item>
+        <item>hospital</item>
+        <item>mosque</item>
+        <item>movie_theater</item>
+        <item>hindu_temple</item>
+        <item>restaurant</item>
+        <item>bakery</item>
+        <item>bar</item>
+        <item>beauty_salon</item>
+        <item>book_store</item>
+        <item>cafe</item>
+        <item>car_dealer</item>
+        <item>car_repair</item>
+        <item>cemetery</item>
+        <item>clothing_store</item>
+        <item>dentist</item>
+        <item>department_store</item>
+        <item>electronics_store</item>
+        <item>embassy</item>
+        <item>fire_station</item>
+        <item>furniture_store</item>
+        <item>gas_station</item>
+        <item>grocery_or_supermarket</item>
+        <item>gym</item>
+        <item>hardware_store</item>
+        <item>laundry</item>
+        <item>jewelry_store</item>
+        <item>liquor_store</item>
+        <item>night_club</item>
+        <item>pharmacy</item>
+        <item>parking</item>
+        <item>police</item>
+        <item>school</item>
+        <item>shopping_mall</item>
+        <item>stadium</item>
+        <item>taxi_stand</item>
+        <item>university</item>
+
+    </string-array>
+
+    <string-array name="place_type_name">
+        <item>Amusement Park</item>
+        <item>Museum</item>
+        <item>Park</item>
+        <item>Zoo</item>
+        <item>Airport</item>
+        <item>ATM</item>
+        <item>Bank</item>
+        <item>Bus Station</item>
+        <item>Church</item>
+        <item>Doctor</item>
+        <item>Hospital</item>
+        <item>Mosque</item>
+        <item>Movie Theater</item>
+        <item>Hindu Temple</item>
+        <item>Restaurant</item>
+        <item>Bakery</item>
+        <item>Bar</item>
+        <item>Beauty Salon</item>
+        <item>Book Store</item>
+        <item>Cafe</item>
+        <item>Car Dealer</item>
+        <item>Car Repair</item>
+        <item>Cemetery</item>
+        <item>Clothing Store</item>
+        <item>Dentist</item>
+        <item>Department Store</item>
+        <item>Electronics Store</item>
+        <item>Embassy</item>
+        <item>Fire Station</item>
+        <item>Furniture Store</item>
+        <item>Gas Station</item>
+        <item>Grocery Supermarket</item>
+        <item>Gym</item>
+        <item>Hardware Store</item>
+        <item>Laundary</item>
+        <item>Jewelary Store</item>
+        <item>Liquor Store</item>
+        <item>Night Club</item>
+        <item>Pharmacy</item>
+        <item>Parking</item>
+        <item>Police</item>
+        <item>School</item>
+        <item>Shopping Mall</item>
+        <item>Stadium</item>
+        <item>Taxi Stand</item>
+        <item>University</item>
+
+    </string-array>
+    <string-array name="place_type1">
+        <item>4fceea171983d5d06c3e9823</item>
+        <item>4bf58dd8d48988d1e2931735</item>
+        <item>4bf58dd8d48988d17c941735</item>
+        <item>4deefb944765f83613cdba6e</item>
+        <item>5642206c498e4bfca532186c</item>
+        <item>4bf58dd8d48988d181941735</item>
+        <item>4bf58dd8d48988d1f2931735</item>
+        <item>4bf58dd8d48988d182941735</item>
+        <item>4bf58dd8d48988d193941735</item>
+        <item>4d4b7105d754a06374d81259</item>
+        <item>4d4b7105d754a06376d81259</item>
+        <item>4d4b7105d754a06377d81259</item>
+        <item>4bf58dd8d48988d1e2941735</item>
+        <item>52e81612bcbc57f1066b7a22</item>
+        <item>52e81612bcbc57f1066b7a23</item>
+        <item>56aa371be4b08b9a8d573547</item>
+        <item>4bf58dd8d48988d15a941735</item>
+        <item>4bf58dd8d48988d1e0941735</item>
+        <item>4bf58dd8d48988d160941735</item>
+        <item>50aaa4314b90af0d42d5de10</item>
+        <item>4bf58dd8d48988d161941735</item>
+        <item>4bf58dd8d48988d15d941735</item>
+        <item>4eb1d4d54b900d56c88a45fc</item>
+        <item>52e81612bcbc57f1066b7a21</item>
+        <item>56aa371be4b08b9a8d573541</item>
+        <item>4eb1d4dd4b900d56c88a45fd</item>
+        <item>50328a4b91d4c4b30a586d6b</item>
+        <item>4bf58dd8d48988d1e9941735</item>
+        <item>5032848691d4c4b30a586d61</item>
+        <item>56aa371be4b08b9a8d573560</item>
+        <item>4bf58dd8d48988d12f941735</item>
+        <item>4bf58dd8d48988d131941735</item>
+        <item>52f2ab2ebcbc57f1066b8b4b</item>
+        <item>4f4530164b9074f6e4fb00ff</item>
+
+    </string-array>
+    <string-array name="place_type_name1">
+        <item>Aquarium</item>
+        <item>Art Gallery</item>
+        <item>Casino</item>
+        <item>Historic Site</item>
+        <item>Memorial Site</item>
+        <item>Museum</item>
+        <item>Performing Arts Venue</item>
+        <item>Theme Park</item>
+        <item>Water Park</item>
+        <item>Food</item>
+        <item>Nightlife Spot</item>
+        <item>Outdoors-Recreation</item>
+        <item>Beach</item>
+        <item>Botanical Garden</item>
+        <item>Forest</item>
+        <item>Fountain</item>
+        <item>Garden</item>
+        <item>Harbor-Marina</item>
+        <item>Hot Spring</item>
+        <item>Island</item>
+        <item>Lake</item>
+        <item>Lighthouse</item>
+        <item>Mountain</item>
+        <item>National Park</item>
+        <item>Reservoir</item>
+        <item>River</item>
+        <item>Rock Climbing Spot</item>
+        <item>Ski Area</item>
+        <item>Volcano</item>
+        <item>Waterfall</item>
+        <item>Library</item>
+        <item>Spiritual Center</item>
+        <item>Border Crossing</item>
+        <item>Tourist Information Center</item>
+
+    </string-array>
+    <string name="title_activity_fsquare">FsquareActivity</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_about_us">AboutUs</string>
+</resources>
